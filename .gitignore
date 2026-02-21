@@ -1,0 +1,139 @@
+# ==============================================
+# Python
+# ==============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================
+# C++ / CMake
+# ==============================================
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+CTestTestfile.cmake
+Makefile
+*.cmake
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+.vs/
+.idea/
+.vscode/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.sln.DotSettings
+
+# ==============================================
+# CUDA
+# ==============================================
+*.cubin
+*.fatbin
+*.ptx
+
+# ==============================================
+# IDE
+# ==============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# ==============================================
+# Data and Models (Large files)
+# ==============================================
+*.pt
+*.pth
+*.weights
+*.model
+*.onnx
+data/images/
+data/videos/
+data/processed/
+data/annotations/
+models/*.pt
+models/*.pth
+output/results/
+output/visualizations/
+output/metrics/
+
+# ==============================================
+# Jupyter Notebooks
+# ==============================================
+.ipynb_checkpoints/
+*.ipynb
+notebooks/.ipynb_checkpoints/
+
+# ==============================================
+# OS
+# ==============================================
+.DS_Store
+Thumbs.db
+*.lnk
+$RECYCLE.BIN/
+desktop.ini
+
+# ==============================================
+# Logs
+# ==============================================
+*.log
+logs/
+
+# ==============================================
+# Temporary Files
+# ==============================================
+*.tmp
+*.bak
+*.backup
+*.temp
+*.cache
+
+# ==============================================
+# Environment Variables
+# ==============================================
+.env
+.env.local
+.env.*.local
+
+# ==============================================
+# Coverage Reports
+# ==============================================
+.coverage
+htmlcov/
+coverage/

@@ -1,0 +1,81 @@
+{
+  "image_processing": {
+    "target_size": [640, 640],
+    "normalization": {
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225]
+    },
+    "augmentation": {
+      "horizontal_flip": 0.5,
+      "brightness_contrast": 0.3,
+      "random_gamma": 0.3,
+      "gaussian_noise": 0.2,
+      "motion_blur": 0.2,
+      "random_fog": 0.1,
+      "random_rain": 0.1
+    }
+  },
+  "detection": {
+    "model_path": "models/yolov8n.pt",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45,
+    "vehicle_classes": [2, 3, 5, 7, 1],
+    "class_names": {
+      "1": "bicycle",
+      "2": "car",
+      "3": "motorcycle",
+      "5": "bus",
+      "7": "truck"
+    }
+  },
+  "congestion": {
+    "thresholds": {
+      "light": 0.2,
+      "moderate": 0.4,
+      "heavy": 0.6,
+      "severe": 0.8
+    },
+    "vehicle_count_thresholds": {
+      "light": 5,
+      "moderate": 10,
+      "heavy": 20,
+      "severe": 30
+    },
+    "road_area_sqm": 1000
+  },
+  "parallel_processing": {
+    "openmp": {
+      "num_threads": 8,
+      "schedule": "dynamic"
+    },
+    "mpi": {
+      "num_processes": 4
+    },
+    "cuda": {
+      "enabled": true,
+      "device_id": 0,
+      "block_size": [16, 16]
+    }
+  },
+  "video_processing": {
+    "fps": 30,
+    "codec": "mp4v",
+    "buffer_size": 30,
+    "display_window": true,
+    "save_output": true
+  },
+  "output": {
+    "save_visualizations": true,
+    "save_statistics": true,
+    "save_detections": true,
+    "output_format": "json",
+    "visualization_dir": "output/visualizations",
+    "results_dir": "output/results",
+    "metrics_dir": "output/metrics"
+  },
+  "logging": {
+    "level": "INFO",
+    "save_logs": true,
+    "log_file": "output/traffic_processing.log"
+  }
+}
