@@ -323,8 +323,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 
 For questions or support:
-- Email: your.email@example.com
-- GitHub Issues: [Create an issue](https://github.com/yourusername/smart-traffic-hpc/issues)
+- Email: work.himanshu.kumaar@gmail.com & shefarahatali5@gmail.com
+- GitHub Issues: [Create an issue](https://github.com/Try-Code/smart-traffic-hpc/issues)
 
 ## 🗺️ Roadmap
 
@@ -339,3 +339,4 @@ For questions or support:
 ---
 
 **Made with ❤️ for smarter traffic management**
+
