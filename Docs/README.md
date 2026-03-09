@@ -179,11 +179,6 @@ mpirun -np 4 ./build/mpi_batch_processor data/images/test output/results/mpi_res
    - Contains: Urban street scenes
    - Best for: Semantic segmentation
 
-### Free Video Sources
-- **Pexels**: https://www.pexels.com/search/videos/traffic/
-- **Pixabay**: https://pixabay.com/videos/search/traffic/
-- **YouTube** (with proper licensing)
-
 ## 🔧 Configuration
 
 ### YOLO Configuration (`config/yolo_config.yaml`)
@@ -339,4 +334,5 @@ For questions or support:
 ---
 
 **Made with ❤️ for smarter traffic management**
+
 
